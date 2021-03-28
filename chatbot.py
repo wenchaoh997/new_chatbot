@@ -11,7 +11,7 @@ def main():
     
     # config = configparser.ConfigParser()
     # config.read('config.ini')
-    updater = Updater(token=str(os.environ.get('ACCESS_TOKEN')), use_context=True)
+    updater = Updater(token=(os.environ.get('ACCESS_TOKEN')), use_context=True)
     dispatcher = updater.dispatcher
 
     global redis1
